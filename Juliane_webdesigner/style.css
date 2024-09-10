@@ -1,0 +1,55 @@
+@charset7 "utf-8";
+/*
+mais um comando de comentário, somente para css.
+*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: rgb(226, 195, 214);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #98004e 40%, #866d74 60%);
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    h1{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
