@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* 
+Um reset de página é quando nós reiniciamos a página. 
+Por essa a razão que começamos com o valor 0, pois é o valor inicial de uma página.
+ */
+
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/*
+ "pixel": serve dimensões (largura x altura)
+ "vh" e/ou "vw": para largura da tela (mobile first)
+ "em" e/ou "rem": serve SOMENTE para fontes (mobile first / CSS3) 
+ */
+html{
+  height: 100vh;
+}
+
+/*
+adicionar cor ao fundo
+  */ 
+  
+body{
+background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%); 
+background-position: bottom;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+/* 
+PARA CONFIGURAR O CSS VAMOS ATRIBUIR ESTRUTURAS E DEPOIS OS OBJETOS
+*/
+
+header{
+  background-color: #c2209f;
+  margin-top: 7px;
+  border-radius: 7px;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+nav{
+  background-color: rgb(179, 32, 118);
+  margin-top: 5px;
+  border-radius: 9px;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+main{
+  background-color: rgb(189, 88, 147);
+  margin-top: 7px;
+  border-radius: 11px;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
