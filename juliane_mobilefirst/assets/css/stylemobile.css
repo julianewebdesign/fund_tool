@@ -5,11 +5,11 @@ Um reset de página é quando nós reiniciamos a página.
 Por essa a razão que começamos com o valor 0, pois é o valor inicial de uma página.
  */
 
-*{
-    margin:0 ;
-    padding:0 ;
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: unset;
 
 }
 
@@ -18,26 +18,26 @@ Por essa a razão que começamos com o valor 0, pois é o valor inicial de uma p
  "vh" e/ou "vw": para largura da tela (mobile first)
  "em" e/ou "rem": serve SOMENTE para fontes (mobile first / CSS3) 
  */
-html{
+html {
   height: 100vh;
 }
 
 /*
 adicionar cor ao fundo
-  */ 
-  
-body{
-background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%); 
-background-position: bottom;
-background-repeat: no-repeat;
-background-attachment: fixed;
+  */
+
+body {
+  background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* 
 PARA CONFIGURAR O CSS VAMOS ATRIBUIR ESTRUTURAS E DEPOIS OS OBJETOS
 */
 
-header{
+header {
   background-color: #c2209f;
   margin-top: 7px;
   border-radius: 7px;
@@ -46,7 +46,7 @@ header{
   text-align: center;
 }
 
-nav{
+nav {
   background-color: rgb(179, 32, 118);
   margin-top: 5px;
   border-radius: 9px;
@@ -55,7 +55,7 @@ nav{
   text-align: center;
 }
 
-main{
+main {
   background-color: rgb(189, 88, 147);
   margin-top: 7px;
   border-radius: 11px;
@@ -64,3 +64,77 @@ main{
   text-align: center;
 }
 
+article{
+  color: #ffe3f4;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 700;
+  color: honeydew;
+  text-align: justify;
+}
+
+
+footer{
+  background-color: rgb(189, 88, 147);
+  text-align: center;
+  border-radius: 0px 0px 7px 7px;
+  width: 90vw;
+  padding: 7px;
+  margin: auto;
+  }
+  
+  header>h1 {
+  
+    text-align: center;
+    color: #eeb9cb ;
+    padding: 3px;
+    text-shadow: #c96085 1px 1px 10px;
+    margin-top: 17px;
+  
+  }
+  
+  nav>a {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+img {
+  display: block;
+  margin: auto;
+}
+
+img#mobile {
+  display: block;
+}
+
+img#tablet {
+  display: none;
+}
+
+img#print {
+  display: none;
+}
+
+img#pc {
+  display: none;
+}
+
+img#tv {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  
+}
