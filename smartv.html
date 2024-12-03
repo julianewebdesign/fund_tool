@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first</title>
+    <link rel="shortcut icon" href="./assets/icon home.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/stylemobile.css">
+    <link rel="stylesheet"
+        href="./https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Na sequencia de acima para baixo: colocado como favicon; 
+     link para o css do menu mobile; link para o css do google fonts -->
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Mobile First</h1>
+    </header>
+
+    <!-- Usando o google icons o menu é criado, junto com uma função usado no
+      javascript para exibir o menu burger no evento de onclik-->
+
+
+    <!-- Esse problema do menu tem haver com a escrita da class.. -->
+    <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+        Menu
+    </span>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="./mobile.html">mobile</a></li>
+            <li><a href="./tablet.html"> tablet</a></li>
+            <li><a href="./smartv.html">smart_tv</a></li>
+            <li><a href="./desktop.html">desktop</a></li>
+        </ul>
+    </menu>
+
+    <main>
+
+        <img src="./assets/icon-phone.png" alt="teste com celular" id="mobile">
+        <img src="./assets/icon-tablet.png" alt="teste com tablet" id="tablet">
+        <img src="./assets/icon-print.png" alt="versão impressora" id="print">
+        <img src="./assets/icon-pc.png" alt="teste com desktop" id="pc">
+        <img src="./assets/icon-tv.png" alt="teste com smart tv" id="tv">
+        <!-- 
+        Main é reservado para texto e imagens.
+         -->
+        <article>
+            <h1>Smart TV</h1>
+            <!-- 
+            Article é um lugar reservado para títulos e parágrafos.
+             -->
+            <p>
+            <h3>Quando falamos sobre a abordagem "mobile first" no desenvolvimento de um site, estamos priorizando a
+                experiência do usuário em dispositivos móveis antes de considerar as versões para desktop e outros
+                dispositivos. Aqui estão algumas funcionalidades e como elas podem ser eficientes em diferentes
+                plataformas:</h3>
+            </p>
+            <p>
+            <h3 class="tópico">Design Responsivo</h3>
+            <h3>Normalmente, a navegação é limitada, então o design deve ser simplificado e otimizado para controle remoto.</h3>
+            </p>
+            <p>
+            <h3 class="tópico">Navegação por Toque vs. Clique </h3>
+            <h3> Navegação geralmente feita via controle remoto, exigindo uma interface mais simples e clara.</h3>
+            </p>
+            <p>
+            <h3 class="tópico">Carregamento Rápido</h3>
+            <h3> O carregamento deve ser rápido, mas a experiência do usuário pode ser mais tolerante a alguns atrasos em comparação com dispositivos móveis.
+            </h3>
+            </p>
+
+            <p>
+            <h3 class="tópico">Conteúdo Acessível</h3>
+            <h3>O conteúdo deve ser visual e de fácil compreensão, com foco em vídeos e imagens.</h3>
+            </p>
+
+
+            <p>
+            <h3 class="tópico">Funcionalidades de Localização</h3>
+            <h3>Geralmente não utiliza serviços de localização, a menos que esteja integrada a um sistema de smart TV.</h3>
+            </p>
+            <p>
+            <h3 class="tópico">Notificações Push</h3>
+            <h3> As notificações não são comuns e podem ser intrusivas, portanto devem ser evitadas.</h3>
+            </p>
+            <p>
+            <h3 class="tópico">Integração com Redes Sociais</h3>
+            <h3> A interação social é limitada, então o foco deve estar em visualização em vez de interação.</h3>
+            </p>
+            <p>
+            <h3 class="tópico">Formulários e Inputs</h3>
+            <h3>Formulários são desaconselháveis, pois a entrada de dados é difícil e pode ser frustrante.</h3>
+            </p>
+
+            <p>
+            <h3> A abordagem mobile first garante que o site funcione bem em dispositivos móveis, que é onde a maioria
+                dos usuários acessa conteúdo atualmente. À medida que você expande para desktop e outros dispositivos, é
+                importante considerar as diferenças de interação e expectativa do usuário para cada plataforma. A
+                eficiência de cada funcionalidade depende da adaptação adequada às características específicas de cada
+                dispositivo.</h3>
+            </p>
+
+        </article>
+    </main>
+
+    <footer>
+        @Juliane - Mobile First - 2024
+    </footer>
+</body>
+<script src="./assets/js/scriptmq.js"> </script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first</title>
+    <link rel="shortcut icon" href="./assets/icon home.png" 
+    type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/stylemobile.css">
+    <link rel="stylesheet"
+    href="./https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Na sequencia de acima para baixo: colocado como favicon; 
+     link para o css do menu mobile; link para o css do google fonts -->
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Media Queries e Mobile First</h1>
+    </header>
+
+    <!-- Usando o google icons o menu é criado, junto com uma função usado no
+      javascript para exibir o menu burger no evento de onclik-->
+
+
+      <!-- Esse problema do menu tem haver com a escrita da class.. -->
+      <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+        Menu
+    </span>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="./mobile.html">mobile</a></li>
+            <li><a href="./tablet.html"> tablet</a></li>
+            <li><a href="./smartv.html">smart_tv</a></li>
+            <li><a href="./desktop.html">desktop</a></li>
+        </ul>
+    </menu>
+
+    <main>
+
+        <img src="./assets/icon-phone.png" alt="teste com celular" id="mobile">
+        <img src="./assets/icon-tablet.png" alt="teste com tablet" id="tablet">
+        <img src="./assets/icon-print.png" alt="versão impressora" id="print">
+        <img src="./assets/icon-pc.png" alt="teste com desktop" id="pc">
+        <img src="./assets/icon-tv.png" alt="teste com smart tv" id="tv">
+        <!-- 
+        Main é reservado para texto e imagens.
+         -->
+        <article>
+            <h1>Testando medias queries</h1>
+            <!-- 
+            Article é um lugar reservado para títulos e parágrafos.
+             -->
+            <p><h3>Media Queries são uma funcionalidade de CSS que permite aplicar estilos específicos a uma página web com
+                base em certas condições, como o tamanho da tela, a resolução, a orientação do dispositivo, entre outros
+                fatores. Isso é essencial para criar designs responsivos que se adaptam a diferentes dispositivos,
+                como computadores, tablets e smartphones.</h3></p>
+            <p><h3 class="tópico">Para usar media queries em seu projeto, você pode seguir alguns passos básicos. Aqui está um guia simples
+                para começar:</h3></p>
+            <p><h3 class="tópico">Defina os Breakpoints: </h3> <h3> Decida os pontos de interrupção (breakpoints) que você deseja usar. Esses são os
+                tamanhos de tela nos quais o layout do seu site mudará. Por exemplo, você pode definir breakpoints para
+                dispositivos móveis, tablets e desktops.</h3></p>
+            <p><h3 class="tópico">Escreva as Media Queries:</h3>  <h3> Use a regra @media para aplicar estilos específicos com base nos breakpoints
+                definidos.</h3></p>
+            <p><h3>Teste em Diferentes Dispositivos: Use ferramentas de desenvolvimento no navegador, como o modo de
+                visualização responsiva no Google Chrome, para testar como seu site se comporta em diferentes tamanhos
+                de tela.</h3></p>
+            <p><h3 class="tópico">Ajuste Conforme Necessário:</h3>  <h3> Baseado nos testes, ajuste suas media queries e estilos para garantir que
+                seu site ofereça uma boa experiência de usuário em todos os dispositivos.</h3></p>
+            <p><h3>Design responsivo é uma abordagem de design web que visa criar páginas que se adaptam automaticamente a
+            diferentes tamanhos de tela e dispositivos, como desktops, tablets e smartphones. Isso é feito utilizando
+            técnicas como media queries, layouts flexíveis e imagens responsivas para garantir que o conteúdo seja
+            exibido de forma otimizada, independentemente do dispositivo usado.</h3></p>
+            <p><h3 class="tópico">Principais Benefícios do Design Responsivo:</h3></p>
+            <p><h3 class="tópico">Melhor Experiência do Usuário:</h3>  <h3> Oferece uma navegação fluida e intuitiva em qualquer dispositivo.</h3></p>
+            <p><h3 class="tópico">SEO Melhorado:</h3>  <h3> Motores de busca, como o Google, favorecem sites responsivos, o que pode melhorar o ranking
+            nas pesquisas.</h3></p>
+            <p><h3 class="tópico">Manutenção Simplificada: </h3>  <h3>Um único site que se adapta a todos os dispositivos é mais fácil de manter do que
+            várias versões do mesmo site.</h3></p>
+            <p><h3 class="tópico">Aumento do Alcance:</h3>  <h3> Acessível a uma maior variedade de usuários, independentemente do dispositivo que estão
+            usando.</h3></p>
+            <p><h3 class="tópico">Layouts Flexíveis: </h3>   <h3>Utilizam porcentagens em vez de valores fixos para definir larguras e alturas.</h3></p>
+            <p><h3>Media Queries: Aplicam estilos CSS específicos com base nas características do dispositivo, como largura da
+            tela.</h3></p>
+            <p><h3 class="tópico">Imagens Responsivas:</h3>  <h3> Ajustam automaticamente o tamanho das imagens para se adequarem ao dispositivo.</h3></p>
+        </article>
+    </main>
+
+    <footer>
+        @Juliane - Mobile First - 2024
+    </footer>
+</body>
+<script src="./assets/js/scriptmq.js"> </script>
+
+</html>
