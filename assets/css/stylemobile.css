@@ -19,9 +19,159 @@ Por essa a razão que começamos com o valor 0, pois é o valor inicial de uma p
  "em" e/ou "rem": serve SOMENTE para fontes (mobile first / CSS3) 
  */
 html {
-  height: 100%;
-  margin: 0; padding: 0; background-color: #f0f0f0;
+  height: 100vw;
 }
+
+
+
+@media screen and (min-width: 321px) and (max-width: 375px){ 
+  /* midia usada no celular */
+} 
+
+body {
+  background-image:url("../assets/icon-phone.png");
+  background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  } 
+  
+  /* 
+  PARA CONFIGURAR O CSS VAMOS ATRIBUIR ESTRUTURAS E DEPOIS OS OBJETOS
+  */
+  
+  header {
+    background-color: #c2209f;
+    margin-top: 7px;
+    border-radius: 7px;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #burger {
+    background-color:#b23f70;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+  }
+  
+  #burger:hover {
+    background-color: #c5a898;
+  }
+  
+  
+  menu {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 5px;
+    width: 90vw;
+    margin: auto;
+    list-style-type: none;
+    background-color:rgb(179, 32, 118);
+  }
+  
+  menu>ul {
+    list-style-type: none;
+  }
+  
+  menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color:rgb(179, 32, 118);
+    border-radius: 9px, 9px;
+    color: whitesmoke;
+    margin: auto;
+  }
+  
+  menu>ul>li>a:hover {
+    background-color: #c5a898;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  main {
+    background-color: rgb(189, 88, 147);
+    margin-top: 7px;
+    border-radius: 11px;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding: 3px;
+  }
+  
+  article>h2{
+    color: #ffe3f4;
+  }
+  
+  article>p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 700;
+    color: honeydew;
+    text-align: justify;
+  }
+  
+  
+  
+    header>h1 {
+    
+      text-align: center;
+      color: #eeb9cb ;
+      padding: 3px;
+      text-shadow: #c96085 1px 1px 10px;
+      margin-top: 17px;
+    
+    }
+    
+    nav>a {
+      color: whitesmoke;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    a:hover {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    footer{
+      background-color: rgb(189, 88, 147);
+      text-align: center;
+      border-radius: 0px 0px 7px 7px;
+      width: 90vw;
+      padding: 7px;
+      margin: auto;
+      }
+
+img#mobile {
+  display: block;
+}
+
+img#tablet {
+  display: none;
+}
+
+img#print {
+  display: none;
+}
+
+img#pc {
+  display: none;
+}
+
+img#tv {
+  display: none;
+} 
+
 
 /*
 adicionar cor ao fundo
@@ -32,7 +182,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
-}
+} 
 
 /* 
 PARA CONFIGURAR O CSS VAMOS ATRIBUIR ESTRUTURAS E DEPOIS OS OBJETOS
@@ -160,10 +310,10 @@ main {
     color: #ffffff;
     }
   
-img {
+img { 
   display: block;
   margin: auto;
-}
+} 
 
 img#mobile {
   display: block;
@@ -192,7 +342,7 @@ img#tv {
 }
 
 body {
-  background-image:url("./back-tablet.jpg");
+  background-image:url("../back-tablet.png");
   background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -283,7 +433,6 @@ body {
     text-align: justify;
   }
   
-  
     
     header>h1 {
     
@@ -345,7 +494,7 @@ deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-bl
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 body {
-  background-image:url("./back-pc.jpg");
+  background-image:url("../assets/icon-pc.png");
   background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -491,8 +640,9 @@ deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-bl
 (na horizontal) e sua exibição de imagens */
 
 @media screen and (min-width: 1201px) {
+
 body {
-  background-image:url("./back-tv.jpg");
+  background-image:url("../assets/icon-tv.png");
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-image: linear-gradient(to bottom, #c96085 50%, #eeb9cb 100%);
@@ -630,5 +780,9 @@ img#tv {
   display: block;
 }
 }
+
+
+
+
 
 
