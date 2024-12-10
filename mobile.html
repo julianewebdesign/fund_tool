@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile first</title>
-    <link rel="shortcut icon" href="./assets/favicon5.png"image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon5.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/stylemobile.css">
     <link rel="stylesheet"
         href="./https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -14,7 +14,7 @@
      link para o css do menu mobile; link para o css do google fonts -->
 </head>
 
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <h1>Mobile First</h1>
     </header>
@@ -24,16 +24,25 @@
 
 
     <!-- Esse problema do menu tem haver com a escrita da class.. -->
-    <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
-        Menu
-    </span>
-
     <menu id="itens">
         <ul>
-            <li><a href="./mobile.html">mobile</a></li>
-            <li><a href="./tablet.html"> tablet</a></li>
-            <li><a href="./smartv.html">smart_tv</a></li>
-            <li><a href="./desktop.html">desktop</a></li>
+            <li><a href="./mobile.html">
+                    Mobile
+                </a></li>
+
+            <li><a href="./tablet.html">
+                    Tablet
+                </a></li>
+                
+            <li><a href="./smartv.html">
+                Tv
+            </a></li>
+
+            <li><a href="./desktop.html">
+                Desktop
+            </a></li>
+
+
         </ul>
     </menu>
 
